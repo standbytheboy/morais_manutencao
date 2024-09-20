@@ -7,7 +7,7 @@
     font-family: "Chakra Petch", sans-serif;
     font-weight: 100;
 }
-
+/* --------------------------------- index --------------------------------- */
 body {
     background: linear-gradient(to right, rgb(108, 172, 255), rgb(84, 69, 173));
 } 
@@ -49,19 +49,18 @@ nav ul li a:hover{
     color: black;
 }
 
-ul {
-    list-style-type: none;
-}
-
 section {
     background-image: url(https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    margin: 80px;
+    margin: 100px;
 }
 
-p {
-    text-align: center;
+aside {
+    background-color: #e4e4e4;
+    padding: 10px 80px;
+    padding-top: 50px;
 }
 
+/* -------------------------- serviços -------------------------- */
 .servicos-section { 
     background-image: url(https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?q=80&w=1953&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-position: center;
@@ -72,7 +71,8 @@ p {
     background-position: center;
 }
 
-.section-title, .section-subtitle, .section-text, .servicos-section-title, .contatos-section-title {
+.section-title {
+    font-size: 60px;
     color: white;
     padding: 0.6em 4em;
     background-color: rgba(0,0,0,0.5);
@@ -80,31 +80,38 @@ p {
     text-align: center;
 }
 
-.section-title {
-    font-size: 60px;
-}
-
 .section-subtitle {
     font-size: 25px;
     padding-bottom: 40px;
+    color: white;
+    padding: 0.6em 4em;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(2px);
+    text-align: center;
 }
 
 .section-text {
+    color: white;
+    padding: 0.6em 4em;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(2px);
+    text-align: center;
     font-size: 20px;
-    padding-bottom: 70px;
-    margin-bottom: 200px;
+    padding-bottom: 50px;
+    margin-bottom: 150px;
 }
 
 .servicos-section-title, .contatos-section-title {
-    padding: 185px;
     font-size: 60px;
-    margin-bottom: 200px;
+    margin: 100px 0;
 }
-
-aside {
-    background-color: #e4e4e4;
-    padding: 10px 80px;
-    padding-top: 50px;
+.servicos-section-title, .contatos-section-title {
+    color: white;
+    padding: 0.6em 4em;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(2px);
+    text-align: center;
+    padding: 200px;
 }
 
 .card-group {
@@ -129,21 +136,10 @@ aside {
     height: 28em;
 }
 
-.contact-card {
-    background: linear-gradient(to right, rgb(108, 172, 255), rgb(84, 69, 173));
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 3px rgba(5, 5, 5, 0.2);
-    font-size: 30px;
-    width: 15em;
-    height: 20em;
-    margin-bottom: 50px;
-}
-
 .card ul li {
     color: #31306c;
     text-align: center;
+    list-style-type: none;
 }
 
 .h3-card{
@@ -159,20 +155,6 @@ aside {
     border: 5px solid;
 }
 
-.icon {
-    width: 200px;
-    margin: 50px;
-}
-
-.contact-card h2 {
-    color: #e4e4e4;
-    margin-top: 70px;
-}
-
-.contact-title {
-    font-size: 50px;
-}
-
 .center{
     padding: 20px;
 }
@@ -185,4 +167,127 @@ footer {
     color: white;
     padding: 15px;
     width: 100%;
+}
+
+/* ----------------------------------- contatos ----------------------------------- */
+.icon {
+    width: 150px;
+    margin: 30px;
+}
+
+.contact-card h2 {
+    color: #e4e4e4;
+    margin-top: 30px;
+}
+
+.contact-title {
+    font-size: 50px;
+}
+
+.contact-link{
+    text-align: center;
+}
+
+.contact-card {
+    background: linear-gradient(to right, rgb(108, 172, 255), rgb(84, 69, 173));
+    padding: 20px;
+    margin: 50px 70px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(5, 5, 5, 0.2);
+    font-size: 30px;
+    width: 14em;
+    height: 16em;
+}
+
+/* -------------------------------- media queries ------------------------------ */
+@media screen and (max-width: 800px){
+    .section-title{
+        font-size: 40px;
+    }
+    .card-group{
+        padding: 0;
+        margin: 0;
+    }
+    .card{
+        width: 8em;
+        height: 13em;
+        padding: 10px;
+        margin: 15px;
+    }
+    .contact-card{
+        width: 8em;
+        height: 10em;
+        padding: 10px;
+        margin: 15px;
+    }
+    .icon{
+        width: 100px;
+        margin: 0 20px;
+        padding: 5px;
+    }
+    .contact-link{
+        font-size: 25px;
+    }
+    .card h2{
+        font-size: 25px;
+        margin: 10px;
+    }
+    .card img{
+        width: 80%;
+        margin: 0 25px 15px;
+    }
+    .list-services{
+        font-size: 16px;
+    }
+    .h3-card{
+        font-size: 16px;
+    }
+    .contact-card h2{
+        font-size: 30px;
+        margin: 15px;
+    }
+    .servicos-section-title, .contatos-section-title {
+        font-size: 40px;
+        margin: 40px 0;
+        padding: 60px;
+    }
+    .contact-title{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    iframe{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    section{
+        margin: 10px;
+    }
+    .section-title{
+        font-size: 20px;
+    }
+    .section-subtitle, .section-text{
+        font-size: 16px;
+        margin: 0;
+        padding: 10px;
+    }
+    iframe{
+        width: 400px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 375) {
+    iframe{
+        width: 0;
+    }
 }
